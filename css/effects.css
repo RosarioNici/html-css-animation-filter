@@ -1,0 +1,77 @@
+.red-square-1 {
+    transition: 4s;
+}
+
+.red-square-1:hover {
+    background-color: red;
+}
+
+.red-square-2 {
+    transition: 4s;
+}
+
+.red-square-2:active {
+    width: 1080px;
+}
+
+.red-square-3 {
+    transition: 2s;
+}
+
+.red-square-3:hover {
+    border-radius: 50%;
+}
+
+.red-square-4 {
+    transition: 2s;
+}
+
+.red-square-4:hover {
+    opacity: 0;
+}
+
+.red-square-5 {
+    transition: 2s;
+}
+
+.red-square-5:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.red-square-5:active {
+    width: 40px;
+    height: 40px;
+}
+
+.img-1:hover {
+    filter: grayscale(1);
+}
+
+.img-2 {
+    transition: 3s;
+}
+
+.img-2:hover {
+    filter: sepia(1);
+}
+
+.img-3 {
+    transition: 3s;
+}
+
+.img-3:hover {
+    filter: sepia(1);
+    border-radius: 30px;
+}
+
+.img-4 {
+    transition: 3s;
+
+}
+
+.img-4:hover {
+    filter: sepia(1);
+    border-radius: 30px;
+    transform: scale(1.2);
+}
