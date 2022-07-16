@@ -75,3 +75,141 @@
     border-radius: 30px;
     transform: scale(1.2);
 }
+
+.infinite {
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+
+.infinite-2:hover {
+    animation: spin-no-complete 2s linear;
+}
+
+@keyframes spin-no-complete {
+    0% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.circuit:hover .no-turn-top {
+    animation: no-turn 2s linear;
+}
+
+@keyframes no-turn {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.circuit:hover .no-turn-bottom {
+    animation: no-turn-bottom 2s linear;
+}
+
+@keyframes no-turn-bottom {
+    0% {
+        right: 10%;
+    }
+
+    50% {
+        right: 70%;
+    }
+
+    100% {
+        right: 10%;
+    }
+}
+
+
+.circuit:hover .turn-bottom {
+    animation: turn-bottom 2s linear;
+}
+
+@keyframes turn-bottom {
+    0% {
+        bottom: -10px;
+        right: 10%;
+    }
+
+    25% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+
+    50% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 10%;
+    }
+}
+
+.circuit:hover .turn-top {
+    animation: turn-top 2s linear;
+}
+
+@keyframes turn-top {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    25% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    50% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    75% {
+        left: 0;
+        top: 100%;
+    }
+
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
